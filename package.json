@@ -1,0 +1,21 @@
+{
+  "name": "uni_admin",
+  "private": true,
+  "type": "module",
+  "browserslist": "defaults",
+  "scripts": {
+    "watch": "nodemon --watch templates --ext mjs,scss --exec \"pnpm build\"",
+    "build": "parcel build \"templates/**/[^_]*.{mjs,scss}\" --dist-dir . --no-content-hash",
+    "clean": "rimraf .parcel-cache"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "@xenyo/parcel-config": "^1.2.0",
+    "nodemon": "^2.0.20",
+    "parcel": "^2.7.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@xenyo/sass-utils": "^1.6.0"
+  }
+}
