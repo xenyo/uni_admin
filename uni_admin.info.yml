@@ -3,6 +3,7 @@ description: Admin theme for Xenyo Uni Framework
 type: theme
 core_version_requirement: ^9 || ^10
 base theme: seven
+asset_autoload: true
 regions:
   header: 'Header'
   pre_content: 'Pre-content'
