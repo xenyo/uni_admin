@@ -1,17 +1,39 @@
 <?php
 
+use Drupal\Core\Render\Element;
+
 /**
  * Implements hook_form_alter().
  */
 function uni_admin_form_alter(&$form, $form_state, $form_id) {
-  switch ($form_id) {
-    case 'layout_paragraphs_component_form':
-      $form['#attached']['library'][] = 'uni_admin/layout-paragraphs-component-form';
-      break;
+  /**
+   * Node page form
+   */
+  if ($form_id === 'node_page_form' || $form_id === 'node_page_edit_form') {
+    $form['#attached']['library'][] = 'uni_admin/node-page-form';
+  }
 
-    case 'node_page_form':
-    case 'node_page_edit_form':
-      $form['#attached']['library'][] = 'uni_admin/node-page-form';
-      break;
+  /**
+   * Layout paragraphs component form
+   */
+  if ($form_id === 'layout_paragraphs_component_form') {
+    // Attach libraries
+    $form['#attached']['library'][] = 'uni_admin/layout-paragraphs-component-form';
+
+    // Modify select empty option labels
+    foreach (Element::children($form) as $key) {
+      if (isset($form[$key]['widget'][0]['select'])) {
+        $form[$key]['widget'][0]['select']['#empty_option'] = t('- Auto -');
+      }
+    }
+
+    // Add form states
+    $form["wrapper_width"]['#states'] = [
+      'invisible' => [
+        ":input[name='disable_wrapper[value]']" => [
+          'checked' => true,
+        ],
+      ],
+    ];
   }
 }
