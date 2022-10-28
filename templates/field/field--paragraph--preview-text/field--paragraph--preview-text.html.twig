@@ -1,5 +1,0 @@
-{% set attributes = attributes.addClass(suggestions) %}
-
-{% for item in items %}
-  <div{{ attributes }}>{{ item.content|render|striptags }}</div>
-{% endfor %}
