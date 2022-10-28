@@ -16,3 +16,9 @@ regions:
   sidebar_first: 'First sidebar'
 regions_hidden:
   - sidebar_first
+libraries:
+  - uni_features/fontawesome
+  - uni_features/really
+  - uni_features/wrapper
+  - uni_admin/horizontal-tabs
+  - uni_admin/jquery-ui
