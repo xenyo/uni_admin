@@ -1,6 +1,6 @@
 @use 'sass-utils' as *;
 
-.paragraph .field--name-placeholder {
+.paragraph > .field--name-uni-placeholder {
   display: grid;
   align-items: center;
   text-align: center;
