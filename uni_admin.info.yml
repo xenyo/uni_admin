@@ -19,6 +19,5 @@ regions_hidden:
 libraries:
   - uni/fontawesome
   - uni/really
-  - uni/wrapper
   - uni_admin/horizontal-tabs
   - uni_admin/jquery-ui

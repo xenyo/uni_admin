@@ -28,9 +28,9 @@ function uni_admin_form_alter(&$form, $form_state, $form_id) {
     }
 
     // Add form states
-    $form["wrapper_width"]['#states'] = [
+    $form["uni_wrapper_width"]['#states'] = [
       'invisible' => [
-        ":input[name='disable_wrapper[value]']" => [
+        ":input[name='uni_wrapper_disable[value]']" => [
           'checked' => true,
         ],
       ],
