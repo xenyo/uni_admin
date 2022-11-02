@@ -7,10 +7,10 @@ use Drupal\Core\Render\Element;
  */
 function uni_admin_form_alter(&$form, $form_state, $form_id) {
   /**
-   * Node page form
+   * Uni page form
    */
-  if ($form_id === 'node_page_form' || $form_id === 'node_page_edit_form') {
-    $form['#attached']['library'][] = 'uni_admin/node-page-form';
+  if ($form_id === 'node_uni_page_form' || $form_id === 'node_uni_page_edit_form') {
+    $form['#attached']['library'][] = 'uni_admin/node-uni-page-form';
   }
 
   /**
