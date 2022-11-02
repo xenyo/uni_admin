@@ -21,3 +21,6 @@ libraries:
   - uni/really
   - uni_admin/horizontal-tabs
   - uni_admin/jquery-ui
+components:
+  namespaces:
+    components: components
