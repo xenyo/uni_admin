@@ -24,3 +24,17 @@ libraries:
 components:
   namespaces:
     components: components
+dependencies:
+  - drupal:system
+  - drupal:block
+config_devel:
+  install:
+    - block.block.uni_admin_breadcrumbs
+    - block.block.uni_admin_content
+    - block.block.uni_admin_messages
+    - block.block.uni_admin_page_title
+    - block.block.uni_admin_primary_admin_actions
+    - block.block.uni_admin_primary_local_tasks
+    - block.block.uni_admin_secondary_local_tasks
+  optional:
+    - block.block.uni_admin_help
