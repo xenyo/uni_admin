@@ -22,7 +22,7 @@ libraries:
   - uni_admin/fieldset
   - uni_admin/horizontal-tabs
   - uni_admin/jquery-ui
-  - uni_admin/layout-paragraphs-component-form
+  - uni_admin/layout-paragraphs
 
 components:
   namespaces:
