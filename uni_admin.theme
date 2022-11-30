@@ -1,5 +1,4 @@
 <?php
 
-include 'functions/form_alter.php';
 include 'functions/preprocess_layout.php';
 include 'functions/preprocess_paragraph.php';
