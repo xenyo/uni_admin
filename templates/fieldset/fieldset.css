@@ -1,2 +1,2 @@
-.fieldset-wrapper{margin-top:10px}
+[class^=field--type-]>fieldset>.fieldset-wrapper{margin-top:10px}
 /*# sourceMappingURL=fieldset.css.map */
