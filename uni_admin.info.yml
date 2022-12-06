@@ -17,6 +17,7 @@ regions:
 regions_hidden:
   - sidebar_first
 libraries:
+  - select2_all/select2
   - uni/fontawesome
   - uni/really
   - uni_admin/fieldset
