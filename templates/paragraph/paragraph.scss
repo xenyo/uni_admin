@@ -1,0 +1,51 @@
+@use 'sass-utils' as *;
+
+.paragraph {
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    @include trim-margin;
+  }
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    @include trim-margin;
+  }
+
+  h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    @include trim-margin;
+  }
+
+  h5 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    @include trim-margin;
+  }
+
+  h6 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    @include trim-margin;
+  }
+
+  p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    @include trim-margin;
+  }
+
+  ul, ol {
+    margin: 15px 0;
+
+    @include trim-margin;
+  }
+}

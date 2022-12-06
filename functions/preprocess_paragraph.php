@@ -7,4 +7,5 @@ function uni_admin_preprocess_paragraph(&$variables) {
     $variables['attributes'] ?? [],
     [ 'class' => $variables['suggestions'] ],
   );
+  $variables['attributes']['class'][] = 'clearfix';
 }
