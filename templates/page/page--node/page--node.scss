@@ -1,9 +1,21 @@
+@use 'sass-utils' as *;
+
 .layout-region-node-main,
 .layout-region-node-secondary,
 .layout-region-node-footer {
   float: none;
   width: auto;
   padding: 0;
+}
+
+.layout-region-node-secondary {
+  @include above($md) {
+    width: calc(100% / 2);
+  }
+
+  @include above($lg) {
+    width: calc(100% / 3);
+  }
 }
 
 .layout-region-node-footer__content {

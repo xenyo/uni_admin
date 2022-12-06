@@ -1,2 +1,2 @@
-.layout-region-node-main,.layout-region-node-secondary,.layout-region-node-footer{float:none;width:auto;padding:0}.layout-region-node-footer__content{border:none!important}
+.layout-region-node-main,.layout-region-node-secondary,.layout-region-node-footer{float:none;width:auto;padding:0}@media (min-width:1000px){.layout-region-node-secondary{width:50%}}@media (min-width:1500px){.layout-region-node-secondary{width:33.3333%}}.layout-region-node-footer__content{border:none!important}
 /*# sourceMappingURL=page--node.css.map */
