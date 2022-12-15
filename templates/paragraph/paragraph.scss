@@ -1,6 +1,8 @@
 @use 'sass-utils' as *;
 
 .paragraph {
+  min-height: 120px;
+
   & > .lpb-controls + .field {
     margin-top: 0;
   }
