@@ -1,6 +1,7 @@
 @use 'sass-utils' as *;
 
-.paragraph {
+.paragraph,
+.uni-float {
   &:not(.lpb-layout) {
     min-height: 120px;
     padding: 0;
